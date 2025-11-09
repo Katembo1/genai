@@ -17,7 +17,6 @@ Run the `frontend` Python app as a sample demonstration, and point to documentat
 1. From the repository root, create and activate a virtual environment:
 
 ```powershell
-cd c:\playground2\jac
 python -m venv .venv
 .\.venv\Scripts\Activate
 ```
@@ -32,7 +31,7 @@ python app.py
 
 3. Expected behavior
 
-- The frontend app uses `streamlit` (or plain Flask/other based app depending on implementation). When it runs, it typically opens a local web UI or prints a listening address in the console (for example, `Running on http://127.0.0.1:8501` for Streamlit). Follow that address in your browser.
+- The frontend app uses `streamlit`. When it runs, it typically opens a local web UI or prints a listening address in the console  `Running on http://127.0.0.1:8501` for Streamlit. Follow that address in your browser.
 
 4. Other components
 
@@ -55,10 +54,6 @@ Licensing note: each third-party package has its own license. This repository do
 
 - When the frontend runs you will see console logs and a http URL. That UI is the demonstration surface.
 - Project docs listed above are plain markdown files. If you have a docs generator in your workflow (Sphinx, MkDocs, or similar), generated HTML may be located elsewhere — search the repo for `docs/_build` or similar.
-
-## Video walkthrough
-
-If you recorded a video walkthrough, add the public URL here and update the top of `README.md` with the link.
 
 ## Next steps (suggested)
 

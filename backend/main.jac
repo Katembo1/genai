@@ -5,8 +5,12 @@ import smtplib;
 import os;
 include utils;
 
+# Load environment variables from a .env file if present
+load_dotenv();
 
-glob llm = Model(model_name="gemini-1.5-pro", verbose=False);
+# Allow selecting LLM via env; default to OpenAI model to avoid Vertex credentials requirement
+glob MODEL_NAME: str = os.getenv("MODEL_NAME") or "gpt-4o-mini";
+glob llm = Model(model_name=MODEL_NAME, verbose=False);
 #glob llm = Model(model_name="gpt-4o", verbose=False);
 
 node Task {
